@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Play</title>
+
+    <style type="text/css">
+        canvas{
+          border: 1px solid black;
+          background: black;
+        }
+        body{
+            margin:0px;
+            background-color: rgb(18, 18, 104);
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <a id="score" style="color:#ffcc99"></a><br>
+    <canvas style="border: 2px solid green"></canvas>
+    <iframe src="m2.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+    <audio autoplay loop>
+        <source src="m2.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <b><input type="button" value="Up" style="margin-left:50%;background-color:rgb(170, 32, 32);border-color:darkred;height:25px;width:50px;font-size: 15px" onclick="moveUp()"></b><br>
+    <input type="button" value="Left" style="margin-left:45%;background-color:rgb(170, 32, 32);border-color:darkred;height:25px;width:50px;font-size: 15px" onclick="moveLeft()">
+    <input type="button" value="Right" style="margin-left:6%;background-color:rgb(170, 32, 32);border-color:darkred;height:25px;width:50px;font-size: 15px" onclick="moveRight()"><br>
+    <input type="button" value="Down" style="margin-left:50%;background-color:rgb(170, 32, 32);border-color:darkred;height:25px;width:50px;font-size: 15px" onclick="moveDown()">
+    <script src="snake.js"></script>
+</body>
+</html>
